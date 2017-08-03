@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Button1"-->
+        <!--android:layout_gravity="top"-->
+        <!--android:id="@+id/Button1"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/Button2"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:text="Button2"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:text="Button3"-->
+        <!--android:id="@+id/Button3"/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/input_message"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="Type Something"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/send"-->
+        <!--android:text="send"/>-->
+
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/button1"-->
+        <!--android:text="Button1"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="Button 2"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/button3"-->
+        <!--android:text="Button3"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:text="Btton4"-->
+        <!--android:id="@+id/button4"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:id="@+id/button5"-->
+        <!--android:text="Button5"-->
+        <!--/>-->
+
+
+    <Button
+        android:id="@+id/button1"
+        android:text="Button1"
+        android:layout_gravity="left|top"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:text="Button 2"
+        android:layout_gravity="right|top"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:text="Button3"
+        android:layout_gravity="left|bottom"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%"
+        />
+
+    <Button
+        android:text="Btton4"
+        android:id="@+id/button4"
+        android:layout_gravity="right|bottom"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%"
+        />
+
+</android.support.percent.PercentFrameLayout>
