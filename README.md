@@ -39,7 +39,7 @@ ProgeressDialog
 ```
 #安卓布局
 
-LinearLayout
+##LinearLayout
 
 ```
 button1
@@ -47,9 +47,9 @@ button1
 <!--android:layout_weight="1"-->
 button2
 <!--android:layout_width="wrap_content"-->
-可以达到button2自动调整。剩下button1全部占满
-```
 
+```
+可以达到button2自动调整。剩下button1全部占满
 RelativeLayout
 
 ```
@@ -60,18 +60,21 @@ android:layout_centerInParent="true"
 android:layout_alignParentBottom="true"
 ```
 
-FrameLayout
+##FrameLayout
 
 ```
 
 ```
 
-PercentFrameLayout
+##PercentFrameLayout
 
-```
 build.grandle
+
 增加compile 'com.android.support:percent:24.+'
+
 引入完整路径和命名空间
+
+```
 android.support.percent.PercentFrameLayout
 xmlns:app="http://schemas.android.com/apk/res-auto"
 
@@ -106,16 +109,20 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         app:layout_heightPercent="50%"
         app:layout_widthPercent="50%"
         />
-        
-        不显示提示，大胆写
 ```
+不显示提示，大胆写
 
 #安卓自定义控件
-```
+
 例如返回按钮
+
 首先创建个button和一个textview  的xml文件layout
+
 如果直接使用的可以直接在mainActivity中
+
 1隐藏  2加载这个layout 3在main_layout中include
+
+```
 setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null){
@@ -123,8 +130,10 @@ setContentView(R.layout.activity_main);
         }
 <include layout="@layout/title"/>
 
+```
 如果添加动作时间，还需要新建一个activity，然后在main_layout中引用这个activity
 
+```
 1-------------------
 public class TitleLayout_new extends LinearLayout {
 
@@ -147,6 +156,6 @@ public class TitleLayout_new extends LinearLayout {
 
 }
 
-
-
 ```
+
+
