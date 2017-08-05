@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TitleLayout"
+            android:label="@string/title_activity_title_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TitleLayout_new"></activity>
     </application>
 
 </manifest>

@@ -110,3 +110,43 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         不显示提示，大胆写
 ```
 
+#安卓自定义控件
+```
+例如返回按钮
+首先创建个button和一个textview  的xml文件layout
+如果直接使用的可以直接在mainActivity中
+1隐藏  2加载这个layout 3在main_layout中include
+setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null){
+            actionBar.hide();
+        }
+<include layout="@layout/title"/>
+
+如果添加动作时间，还需要新建一个activity，然后在main_layout中引用这个activity
+
+1-------------------
+public class TitleLayout_new extends LinearLayout {
+
+    public TitleLayout_new(Context context, AttributeSet attrs) {
+        super(context,attrs);
+        LayoutInflater.from(context).inflate(R.layout.title,this);
+        Button button = (Button)findViewById(R.id.title_back);
+        button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("TitleLayout_new", "onClick: ");
+            }
+        });
+    }
+2----------------
+<com.example.liuyi.uicustomviews.TitleLayout_new
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+}
+
+
+
+```
