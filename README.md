@@ -79,36 +79,36 @@ android.support.percent.PercentFrameLayout
 xmlns:app="http://schemas.android.com/apk/res-auto"
 
 <Button
-        android:id="@+id/button1"
-        android:text="Button1"
-        android:layout_gravity="left|top"
-        app:layout_heightPercent="50%"
-        app:layout_widthPercent="50%"
-        />
+android:id="@+id/button1"
+android:text="Button1"
+android:layout_gravity="left|top"
+app:layout_heightPercent="50%"
+app:layout_widthPercent="50%"
+/>
 
-    <Button
-        android:id="@+id/button2"
-        android:text="Button 2"
-        android:layout_gravity="right|top"
-        app:layout_heightPercent="50%"
-        app:layout_widthPercent="50%"
-        />
+<Button
+android:id="@+id/button2"
+android:text="Button 2"
+android:layout_gravity="right|top"
+app:layout_heightPercent="50%"
+app:layout_widthPercent="50%"
+/>
 
-    <Button
-        android:id="@+id/button3"
-        android:text="Button3"
-        android:layout_gravity="left|bottom"
-        app:layout_heightPercent="50%"
-        app:layout_widthPercent="50%"
-        />
+<Button
+android:id="@+id/button3"
+android:text="Button3"
+android:layout_gravity="left|bottom"
+app:layout_heightPercent="50%"
+app:layout_widthPercent="50%"
+/>
 
-    <Button
-        android:text="Btton4"
-        android:id="@+id/button4"
-        android:layout_gravity="right|bottom"
-        app:layout_heightPercent="50%"
-        app:layout_widthPercent="50%"
-        />
+<Button
+android:text="Btton4"
+android:id="@+id/button4"
+android:layout_gravity="right|bottom"
+app:layout_heightPercent="50%"
+app:layout_widthPercent="50%"
+/>
 ```
 不显示提示，大胆写
 
@@ -124,10 +124,10 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 
 ```
 setContentView(R.layout.activity_main);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null){
-            actionBar.hide();
-        }
+ActionBar actionBar = getSupportActionBar();
+if (actionBar != null){
+actionBar.hide();
+}
 <include layout="@layout/title"/>
 
 ```
@@ -137,25 +137,23 @@ setContentView(R.layout.activity_main);
 1-------------------
 public class TitleLayout_new extends LinearLayout {
 
-    public TitleLayout_new(Context context, AttributeSet attrs) {
-        super(context,attrs);
-        LayoutInflater.from(context).inflate(R.layout.title,this);
-        Button button = (Button)findViewById(R.id.title_back);
-        button.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("TitleLayout_new", "onClick: ");
-            }
-        });
-    }
+public TitleLayout_new(Context context, AttributeSet attrs) {
+super(context,attrs);
+LayoutInflater.from(context).inflate(R.layout.title,this);
+Button button = (Button)findViewById(R.id.title_back);
+button.setOnClickListener(new OnClickListener() {
+@Override
+public void onClick(View view) {
+Log.d("TitleLayout_new", "onClick: ");
+}
+});
+}
 2----------------
 <com.example.liuyi.uicustomviews.TitleLayout_new
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        />
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+/>
 
 }
 
 ```
-
-

@@ -4,7 +4,11 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.example.vpjacob.listview"
+=======
+        applicationId "com.example.liuyi.sharedperference"
+>>>>>>> 6ace4ec815867da00d3a74c2d54218f1bc1c69c0
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.vpjacob.listview">
+=======
+    package="com.example.liuyi.sharedperference">
+>>>>>>> 6ace4ec815867da00d3a74c2d54218f1bc1c69c0
 
     <application
         android:allowBackup="true"
